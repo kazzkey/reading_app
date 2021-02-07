@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+html {
+  height: 100%;
+  background-color: #ff4081;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main {
+  background-color: #fff;
+  border: solid 1px #fff;
+  margin: 2%;
+  padding: 0 5%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+p:not(.content) {
+  -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2, h3 {
+  -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+b {
+  margin: 0 3px;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+.content {
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0;
+  line-height: 35px;
+}
+.content::selection {
+  background: #ff4081;
+  color: #fff;
+}
+u::selection {
+  background: #ff4081;
+  color: #fff;
+}
+
+/* for Firefox */
+.content::-moz-selection {
+  background: #ff4081;
+  color: #fff;
+}
+
+u::-moz-selection {
+  background: #ff4081;
+  color: #fff;
+}
+
+
+Button {
+  float: right;
+}
+.q-area {
+  overflow: hidden;
+}
+hr {
+  clear: both;
+  margin-top: 10px;
 }
